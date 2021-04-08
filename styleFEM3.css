@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+
+ user-select: none;
+ font-family: 'Inter' , sans-serif;
+}
+body{
+  background-image: url(./images/pattern-bg.svg) , url(./images/pattern-quotes.svg) , url(./images/pattern-curve.svg);
+  background-position: center 2.5rem , center 25rem , center 34.5rem;
+  background-repeat: no-repeat , no-repeat , no-repeat;
+  background-size: 330px , 100px , auto;
+}
+.wrap{
+  max-height: 700px;
+  overflow: hidden;
+  
+}
+.card{
+  padding: 1rem;
+/* ovo treba da se promeni za sad je samo za 375 px width */
+  width: 90%;
+  margin: 2rem auto;
+  max-width: 100%;
+  background-color: none;
+
+  text-align: center;
+
+  transition: 600ms ease-in;
+}
+.slika1{
+  position: relative;
+}
+.card img{
+  
+
+  width: 85%;
+  margin: 0.5rem auto;
+  display: block;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+ button{
+  position: absolute ;
+  bottom: 0rem;
+  left: 50%;
+  transform: translate(-50% , 50%);
+  
+  padding: 0.5rem 1rem;
+
+
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+  border-radius: 1rem;
+  border: solid  1px #f4f4fc ;
+
+  background-color: white;
+ 
+  opacity: 1;
+
+  transition: 300ms ease;
+  z-index: 1;
+  cursor: pointer;
+}
+button pre{
+  opacity: 0.6;
+  font-size: 1rem;
+  font-weight: 900;
+}
+button:hover{
+  background-color: #f4f4fc;
+ 
+}
+
+.card p{
+  margin-top: 3rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.7rem;
+  opacity: 0.7;
+}
+
+.card h2{
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  opacity: 0.9;
+}
+.card h3{
+  font-size: 1.2rem;
+  font-weight: 300;
+  opacity: 0.7;
+}
+#card2{
+ 
+  transform: translate(200% , -104.5%);
+
+}
+
+/* cllases for slider   .js */
+.desno1mob{
+  transform: translate(200% , 0%) !important;
+}
+
+.desno2mob{
+  transform: translate(0% , -104.5%)  !important;
+}
+#card1{
+  transform: translate(0% , 0%);
+}
+
+/* media for desktop */
+@media screen and (min-width:1100px){
+  body{
+    overflow: hidden;
+  }
+.card{
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 1100px;
+  margin: 3.5rem auto;
+
+  padding: 1rem;
+}
+.card img{
+  width: 500px;
+}
+.wrap{
+ 
+ max-height: 700000px;
+}
+.text p, .text h2{
+  margin: 0 ;
+}
+.text p{
+  font-weight: 350;
+  font-size: 1.5rem;
+}
+.text{
+  
+ 
+  position: absolute;
+  right: 350px;
+  top: 50%;
+  transform: translateY(-50% );
+
+  text-align: left;
+}
+.text h2 , .text h3{
+  display: inline-block;
+  margin-top: 3rem;
+
+  font-size: 1.2rem;
+}
+#card2{
+ 
+  transform: translate(200% , -108.5%);
+
+}
+.desno2mob{
+  transform: translate(0% , -108.5%)  !important;
+}
+button{
+ 
+  bottom: 0rem;
+  left: 25%;
+  transform: translate(-50% , 50%);
+  
+  padding: 0.8rem 1.7rem;
+ border-radius: 2rem;
+}
+button pre{
+  opacity: 0.6;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+body{
+  background-image: url(./images/pattern-bg.svg) , url(./images/pattern-quotes.svg) , url(./images/pattern-curve.svg);
+  background-position: 83% 3% , 20% 18% , left 60%;
+  background-repeat: no-repeat , no-repeat , no-repeat;
+  background-size: 700px , 100px , 1200px;
+}
+}
