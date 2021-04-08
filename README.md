@@ -1,2 +1,2 @@
 # FEMentor3
-my 3rd project for Frontend Mentor
+my 3rd project for Frontend Mentor, hope you like it :)_
